@@ -1,0 +1,5 @@
+.vscode
+
+.env
+/var-lib-mysql
+/app
