@@ -4,16 +4,20 @@ fix-permissions:
 
 # load the server
 start:
-	docker-compose up -d --remove-orphans
+	docker-compose up -d --build
+
+# stop the server
+stop:
+	docker-compose down --remove-orphans
+
+# restart the server
+restart:
+	docker-compose restart
 
 # install the project
 install: start
 	docker-compose exec php symfony new .
 	make fix-permissions
-
-# stop the server
-stop:
-	docker-compose down --remove-orphans
 
 # enter in the project with /bin/bash in php container
 bash-php:
