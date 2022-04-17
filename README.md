@@ -8,14 +8,19 @@ You can copy your project in the root directory and rename it `app` to use it.
 
 > remember to edit the database URL in your symfony's `.env`
 
+```bash
+DATABASE_URL="mysql://root:secret@database:3306/symfony_docker?serverVersion=8.0"
+```
+
 ## Different command to use with _make_
 
 | command         | description                                                      |
 | --------------- | ---------------------------------------------------------------- |
-| install         | will start the server and create a new symfony project           |
-| fix-permissions | will fix permission to let root and user access to _./app_ files |
 | start           | will start the server                                            |
 | stop            | will stop the server                                             |
+| restart         | will restart the server                                          |
+| install         | will start the server and create a new symfony project           |
+| fix-permissions | will fix permission to let root and user access to _./app_ files |
 | bash-php        | will let enter in bash for the php container                     |
 | remove          | will uninstall the symfony project (without remove the database) |
 
@@ -23,10 +28,11 @@ You can copy your project in the root directory and rename it `app` to use it.
 
 ## Ports
 
-| port | container |
-| ---- | --------- |
-| 3306 | database  |
-| 9000 | php       |
-| 8080 | nginx     |
+| port | container  |
+| ---- | ---------- |
+| 3306 | database   |
+| 9000 | php        |
+| 80   | nginx      |
+| 8080 | phpmyadmin |
 
-> <a href="https://www.twilio.com/blog/get-started-docker-symfony">I made this tool using this tutorial</a> 
+> <a href="https://www.twilio.com/blog/get-started-docker-symfony">I made this tool using this tutorial</a>
