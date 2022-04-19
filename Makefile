@@ -23,8 +23,8 @@ install: start
 bash-php:
 	docker-compose exec php /bin/bash
 
-# 
-dev: start bash-php
+# normal use
+dev: start bash-php stop
 
 # uninstall the project in ./app
 remove: stop fix-permissions

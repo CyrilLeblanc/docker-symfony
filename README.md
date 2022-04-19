@@ -9,7 +9,7 @@ You can copy your project in the root directory and rename it `app` to use it.
 > remember to edit the database URL in your symfony's `.env`
 
 ```bash
-DATABASE_URL="mysql://root:secret@database:3306/symfony_docker?serverVersion=8.0"
+DATABASE_URL="mysql://root:secret@database:3306/symfony_app?serverVersion=8.0"
 ```
 
 ## Different command to use with _make_
