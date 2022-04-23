@@ -37,3 +37,9 @@ DATABASE_URL="mysql://root:secret@database:3306/symfony_app?serverVersion=8.0"
 | 8080 | phpmyadmin |
 
 > <a href="https://www.twilio.com/blog/get-started-docker-symfony">I made this tool using this tutorial</a>
+
+# Xdebug
+
+Xdebug is installed on the php container on the port 9003.
+
+A launch file for vscode can be found vscode in the vscode directory of this project.
