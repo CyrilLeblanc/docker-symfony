@@ -14,15 +14,16 @@ DATABASE_URL="mysql://root:secret@database:3306/symfony_app?serverVersion=8.0"
 
 ## Different command to use with _make_
 
-| command         | description                                                      |
-| --------------- | ---------------------------------------------------------------- |
-| start           | will start the server                                            |
-| stop            | will stop the server                                             |
-| restart         | will restart the server                                          |
-| install         | will start the server and create a new symfony project           |
-| fix-permissions | will fix permission to let root and user access to _./app_ files |
-| bash-php        | will let enter in bash for the php container                     |
-| remove          | will uninstall the symfony project (without remove the database) |
+| command         | description                                                                          |
+| --------------- | ------------------------------------------------------------------------------------ |
+| dev             | will start the docker let you enter in bash in it and stop it after you typed `exit` |
+| start           | will start the server                                                                |
+| stop            | will stop the server                                                                 |
+| restart         | will restart the server                                                              |
+| install         | will start the server and create a new symfony project                               |
+| fix-permissions | will fix permission to let root and user access to _./app_ files                     |
+| bash-php        | will let enter in bash for the php container                                         |
+| remove          | will uninstall the symfony project (without remove the database)                     |
 
 > example : `make start`
 
